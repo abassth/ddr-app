@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>DDR — Day Daw Rek | Signalement Routier Sénégal</title>
+  <meta name="description" content="DDR (Day Daw Rek) — Application de signalement des travaux routiers au Sénégal. Signalez, collaborez, et améliorez vos routes." />
+  <meta name="theme-color" content="#FF6B2B" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- App Root -->
+  <div id="app"></div>
+
+  <!-- Toast Notifications -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Modal Overlay -->
+  <div id="modal-overlay" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div id="modal-box" class="modal-box">
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Alert Banner -->
+  <div id="alert-banner" class="alert-banner hidden"></div>
+
+  <!-- ===== External Libraries ===== -->
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <!-- ===== App Scripts (order matters) ===== -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/citoyen.js"></script>
+  <script src="js/ministere.js"></script>
+  <script src="js/admin.js"></script>
+
+</body>
+</html>
